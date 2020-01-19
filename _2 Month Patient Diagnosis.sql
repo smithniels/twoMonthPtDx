@@ -1,7 +1,4 @@
-
---Share with Randi + Data
-
--- The only code that needs to be altered is the deceased section. 
+-- The only code that needs to be editted before this is run is the deceased section. 
 --The other 4 sections automatically pull from 2 months ago to today
 
 --***********************************************************************************************************************************
@@ -17,7 +14,6 @@ where p.pid=u.uid
    																		   --     ATTN: This is the one thing that needs to be adjusted
    and (p.deceaseddate like '10/%/2019' or p.deceaseddate like '11/%/2019') -- <--~~--~~--~~ EDIT THESE 2 BAD BOYS (LAST MONTH + CURRENT MONTH) 
 																		   --     ATTN: This is the one thing that needs to be adjusted
-
 ORDER BY  p.deceasedDate DESC
 
 --	  these aren't actually stored as dates,
